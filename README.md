@@ -18,3 +18,5 @@
   <li><strong>CSS</strong>: Estilo e layout responsivo</li>
   <li><strong>JavaScript</strong>: Interatividade e manipulação dos dados</li>
 </ul>
+
+Link: <a href="https://caiorossi00.github.io/Relatorio-descarga-GWC/" target="_blank">Acesse aqui</a>

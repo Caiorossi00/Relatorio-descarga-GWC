@@ -35,16 +35,21 @@
 
 .container-header {
   display: flex;
-  height: 45vh;
+  height: 60vh;
   color: white;
   align-items: center;
   font-family: "inter";
+  justify-content: space-between;
+}
+
+.hero-itens {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10vw;
 }
 
 .hero-text {
   font-weight: 700;
-  margin-left: 10vw;
-  margin-top: -10vh;
 }
 
 .hero-text h1 {
@@ -58,4 +63,50 @@
   letter-spacing: -1px;
   font-weight: 300;
   color: rgb(219, 217, 217);
+}
+
+.hero-btns {
+  margin-top: 2rem;
+  display: flex;
+  gap: 10px;
+}
+
+.hero-btns button {
+  padding: 12px 60px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 2px;
+}
+
+.hero-btns button.black {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.hero-btns button.black:hover {
+  background-color: #333333;
+}
+
+.hero-btns button.white {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.hero-btns button.white:hover {
+  background-color: #f0f0f0;
+}
+
+.hero-pictures {
+  margin-right: 5vw;
+  border-radius: 10px;
+}
+
+.hero-pictures img {
+  height: 35vh;
+  width: 40vw;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid white;
 }

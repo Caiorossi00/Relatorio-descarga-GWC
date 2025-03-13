@@ -9,20 +9,56 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/d3fb1e03fb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link rel="stylesheet" href="./assets/styles/hero.css" />
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <title>GWC</title>
   </head>
   <body>
-    <div id="info"></div>
-    <div class="container">
-      <div id="headlines"></div>
-      <input
-        type="text"
-        id="search"
-        placeholder="Pesquisar por cliente, placa, produto, etc..."
-      />
-      <div id="report"></div>
-    </div>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb8x3cLgDrd6CfdLYJq6MVoJymKV1BzPrvUw&s"
+            alt="Logo Fronteira"
+          />
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="container-header">
+        <div class="hero-text">
+          <h1>Welcome to Ordinals Wallet</h1>
+          <p>Buy, sell and collect our items</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="search-container">
+        <input
+          type="text"
+          id="search"
+          placeholder="Pesquisar por cliente, placa, produto, etc..."
+        />
+        <i class="fas fa-search"></i>
+      </div>
+
+      <div id="info"></div>
+      <div class="container">
+        <div id="headlines"></div>
+
+        <div id="report"></div>
+      </div>
+    </main>
     <script type="module" src="script.js"></script>
   </body>
 </html>

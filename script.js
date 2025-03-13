@@ -1,4 +1,4 @@
-import data from "./data.js";
+import data from "./assets/data/data.js";
 
 let currentSortColumn = null;
 let isAscending = true;

@@ -1,0 +1,61 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 0.5rem 2rem;
+  font-family: "inter";
+}
+
+.logo img {
+  width: 50px;
+  border-radius: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #28a95e;
+}
+
+.container-header {
+  display: flex;
+  height: 45vh;
+  color: white;
+  align-items: center;
+  font-family: "inter";
+}
+
+.hero-text {
+  font-weight: 700;
+  margin-left: 10vw;
+  margin-top: -10vh;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  letter-spacing: -2px;
+  width: 70%;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  letter-spacing: -1px;
+  font-weight: 300;
+  color: rgb(219, 217, 217);
+}

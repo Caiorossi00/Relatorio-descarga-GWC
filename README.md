@@ -3,12 +3,12 @@
 
 <h2>Principais Funcionalidades</h2>
 <ul>
-  <ol>Filtro por letras, onde o usuário pode digitar palavras e ver resultados personalizados baseados na sua busca</ol>
-  <ol>Atualização em tempo real dos dados filtrados à medida que o usuário digita na barra de pesquisa</ol>
-  <ol>Exibição de Notas Expansíveis, permitindo que o usuário visualize detalhes adicionais sobre cada entrada ao clicar em um ícone de expansão</ol>
-  <ol>Interface interativa e responsiva, ajustando-se automaticamente a diferentes tamanhos de tela para garantir uma experiência fluida em dispositivos móveis e desktop</ol>
-  <ol>Busca em múltiplas colunas, permitindo que os dados sejam filtrados não apenas por produto, mas também por cliente, motorista, placa, NF, romaneio e data</ol>
-  <ol>Capacidade de alternar entre diferentes critérios de ordenação, permitindo ao usuário reorganizar os dados de acordo com as colunas de interesse</ol>
+  <li>Filtro por letras, onde o usuário pode digitar palavras e ver resultados personalizados baseados na sua busca</li>
+  <li>Atualização em tempo real dos dados filtrados à medida que o usuário digita na barra de pesquisa</li>
+  <li>Exibição de Notas Expansíveis, permitindo que o usuário visualize detalhes adicionais sobre cada entrada ao clicar em um ícone de expansão</li>
+  <li>Interface interativa e responsiva, ajustando-se automaticamente a diferentes tamanhos de tela para garantir uma experiência fluida em dispositivos móveis e desktop</li>
+  <li>Busca em múltiplas colunas, permitindo que os dados sejam filtrados não apenas por produto, mas também por cliente, motorista, placa, NF, romaneio e data</li>
+  <li>Capacidade de alternar entre diferentes critérios de ordenação, permitindo ao usuário reorganizar os dados de acordo com as colunas de interesse</li>
 </ul>
 <br>
 <h2>Tecnologias Utilizadas</h2>

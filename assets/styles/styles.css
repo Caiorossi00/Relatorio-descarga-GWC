@@ -141,3 +141,47 @@ main {
   font-size: 16px;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  main {
+    width: 90%;
+  }
+
+  .entry {
+    grid-template-columns: 1fr 1.5fr 1.5fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #headlines {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-container input {
+    width: 100%;
+    margin-left: 0;
+    padding-right: 2em;
+  }
+
+  #search {
+    width: 60%;
+    margin-top: 4vh;
+  }
+
+  .toggle-notes {
+    font-size: 16px;
+  }
+
+  .notes {
+    padding: 15px;
+    margin-top: 0;
+    width: 90%;
+  }
+
+  .notes ul {
+    padding-left: 15px;
+  }
+}

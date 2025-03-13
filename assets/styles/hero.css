@@ -110,3 +110,57 @@
   border-radius: 10px;
   border: 1px solid white;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .logo img {
+    width: 40px;
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 1.2rem;
+  }
+
+  .container-header {
+    justify-content: center;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .hero-itens {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+    width: 90%;
+    margin-top: 5vh;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+
+  .hero-btns {
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 15px;
+    display: none;
+  }
+
+  .hero-pictures {
+    display: none;
+  }
+}

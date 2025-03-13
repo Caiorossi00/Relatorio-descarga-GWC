@@ -1,18 +1,5 @@
 import data from "./data.js";
 
-function getStatusClass(status) {
-  switch (status) {
-    case "sim":
-      return "sim";
-    case "parcial":
-      return "parcial";
-    case "nao":
-      return "nao";
-    default:
-      return "";
-  }
-}
-
 function toggleNotes(event) {
   const entry = event.target.closest(".entry");
   const notes = entry.querySelector(".notes");
@@ -39,7 +26,7 @@ function renderHeadlines() {
     <p>Produto</p>
     <p>Nome do Cliente</p>
     <p>Nome do Motorista</p>
-    <p>Peso Líquido</p>
+    <p>Peso</p>
     <p>Placa</p>
     <p>NF</p>
     <p>Romaneio</p>
@@ -78,6 +65,5 @@ function renderReport() {
   });
 }
 
-// Renderiza os títulos e os itens da lista
 renderHeadlines();
 renderReport();

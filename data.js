@@ -15,6 +15,22 @@ const data = [
       "Verificar documentação adicional.",
     ],
   },
+  {
+    id: 2,
+    cliente: "Caio Lucas Rossi",
+    motorista: "Lucas",
+    peso_liquido: "7.420 kg",
+    data_descarga: "12/03/2025",
+    produto: "Arroz",
+    placa: "ABC-1234",
+    nf: "123456",
+    romaneio: "654321",
+    notas: [
+      "Parceiro precisa ser corrigido, de fronteira para Ricardo Pontes Netto.",
+      "Nota não foi emitida.",
+      "Verificar documentação adicional.",
+    ],
+  },
 ];
 
 export default data;

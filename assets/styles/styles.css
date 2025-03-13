@@ -56,6 +56,11 @@ main {
   border: 1px solid rgb(202, 202, 202);
 }
 
+.entry:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
 .entry p {
   margin: 0;
 }

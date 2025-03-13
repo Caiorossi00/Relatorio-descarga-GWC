@@ -1,5 +1,4 @@
 <h1>Relatório de Descarga - GWC</h1>
-<hr>
 <p>Um projeto onde poderão ser armazenadas as informações sobre as descargas dos caminhões durante o período da safra de 2024/2025</p>
 
 <h2>Principais Funcionalidades</h2>

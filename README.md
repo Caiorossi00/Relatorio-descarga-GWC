@@ -11,12 +11,13 @@
   <ol>Busca em múltiplas colunas, permitindo que os dados sejam filtrados não apenas por produto, mas também por cliente, motorista, placa, NF, romaneio e data</ol>
   <ol>Capacidade de alternar entre diferentes critérios de ordenação, permitindo ao usuário reorganizar os dados de acordo com as colunas de interesse</ol>
 </ul>
-
+<br>
 <h2>Tecnologias Utilizadas</h2>
 <ul>
   <li><strong>HTML</strong>: Estrutura da página</li>
   <li><strong>CSS</strong>: Estilo e layout responsivo</li>
   <li><strong>JavaScript</strong>: Interatividade e manipulação dos dados</li>
 </ul>
-
+<hr>
+<br>
 Link: <a href="https://caiorossi00.github.io/Relatorio-descarga-GWC/" target="_blank">Acesse aqui</a>

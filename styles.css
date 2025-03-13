@@ -85,3 +85,19 @@ body {
 .notes li {
   margin-bottom: 5px;
 }
+
+#search {
+  width: 40%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+  align-self: flex-end;
+}
+
+#search::placeholder {
+  color: #999;
+}

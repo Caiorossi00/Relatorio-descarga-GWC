@@ -61,11 +61,25 @@ function sortData(column, ascending) {
   });
 }
 
-function renderReport() {
+function filterData(searchTerm) {
+  return data.filter((item) => {
+    return (
+      item.cliente.toLowerCase().includes(searchTerm) ||
+      item.motorista.toLowerCase().includes(searchTerm) ||
+      item.produto.toLowerCase().includes(searchTerm) ||
+      item.placa.toLowerCase().includes(searchTerm) ||
+      item.nf.toLowerCase().includes(searchTerm) ||
+      item.romaneio.toLowerCase().includes(searchTerm) ||
+      item.data_descarga.toLowerCase().includes(searchTerm)
+    );
+  });
+}
+
+function renderReport(filteredData = data) {
   const reportDiv = document.getElementById("report");
   reportDiv.innerHTML = "";
 
-  data.forEach((item) => {
+  filteredData.forEach((item) => {
     const entry = document.createElement("div");
     entry.classList.add("entry");
     entry.innerHTML = `
@@ -93,6 +107,12 @@ function renderReport() {
     reportDiv.appendChild(entry);
   });
 }
+
+document.getElementById("search").addEventListener("input", (event) => {
+  const searchTerm = event.target.value.toLowerCase();
+  const filteredData = filterData(searchTerm);
+  renderReport(filteredData);
+});
 
 renderHeadlines();
 renderReport();

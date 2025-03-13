@@ -1,5 +1,8 @@
 import data from "./data.js";
 
+let currentSortColumn = null;
+let isAscending = true;
+
 function toggleNotes(event) {
   const entry = event.target.closest(".entry");
   const notes = entry.querySelector(".notes");
@@ -23,19 +26,45 @@ function toggleNotes(event) {
 function renderHeadlines() {
   const headlinesDiv = document.getElementById("headlines");
   headlinesDiv.innerHTML = `
-    <p>Produto</p>
-    <p>Nome do Cliente</p>
-    <p>Nome do Motorista</p>
-    <p>Peso</p>
-    <p>Placa</p>
-    <p>NF</p>
-    <p>Romaneio</p>
-    <p>Data</p>
+    <p data-column="produto">Produto</p>
+    <p data-column="cliente">Nome do Cliente</p>
+    <p data-column="motorista">Nome do Motorista</p>
+    <p data-column="peso_liquido">Peso</p>
+    <p data-column="placa">Placa</p>
+    <p data-column="nf">NF</p>
+    <p data-column="romaneio">Romaneio</p>
+    <p data-column="data_descarga">Data</p>
   `;
+
+  headlinesDiv.querySelectorAll("p").forEach((headline) => {
+    headline.addEventListener("click", () => {
+      const column = headline.getAttribute("data-column");
+
+      if (currentSortColumn === column) {
+        isAscending = !isAscending;
+      } else {
+        currentSortColumn = column;
+        isAscending = true;
+      }
+
+      sortData(column, isAscending);
+      renderReport();
+    });
+  });
+}
+
+function sortData(column, ascending) {
+  data.sort((a, b) => {
+    if (a[column] < b[column]) return ascending ? -1 : 1;
+    if (a[column] > b[column]) return ascending ? 1 : -1;
+    return 0;
+  });
 }
 
 function renderReport() {
   const reportDiv = document.getElementById("report");
+  reportDiv.innerHTML = "";
+
   data.forEach((item) => {
     const entry = document.createElement("div");
     entry.classList.add("entry");

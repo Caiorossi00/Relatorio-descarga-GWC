@@ -2,13 +2,13 @@ const data = [
   {
     id: 1,
     cliente: "Ricardo Pontes Netto",
-    motorista: "Rafael Gonçalves Neutzling",
-    peso_liquido: "7.420 kg",
+    motorista: "Rafael Neutzling",
+    peso_liquido: "5.291 kg",
     data_descarga: "12/03/2025",
     produto: "Arroz",
     placa: "IWI6G68",
     nf: "59515561",
-    romaneio: "11172",
+    romaneio: "10465",
     notas: [
       "Parceiro precisa ser corrigido, de fronteira para Ricardo Pontes Netto.",
       "Nota não foi emitida.",

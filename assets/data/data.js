@@ -9,11 +9,7 @@ const data = [
     placa: "IWI6G68",
     nf: "17614",
     romaneio: "10465",
-    notas: [
-      "Parceiro precisa ser corrigido, de fronteira para Ricardo Pontes Netto.",
-      "Nota não foi emitida.",
-      "Verificar documentação adicional.",
-    ],
+    notas: ["Procedimento Finalizado"],
   },
   {
     id: 2,

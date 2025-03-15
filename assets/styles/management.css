@@ -88,6 +88,8 @@ main {
 
   .notes-container {
     padding: 10px;
+    margin-top: 4vh;
+    align-items: center;
   }
 
   #addNote {

@@ -2,14 +2,13 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Website criado com o intuito de armazenar informações sobre a safra 2024/2025"
     />
     <link
       rel="icon"
-      href="./assets/images/logo-fronteira.jfif"
+      href="../assets/images/logo-fronteira.jfif"
       type="image/jfif"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,25 +21,29 @@
       src="https://kit.fontawesome.com/d3fb1e03fb.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./assets/styles/styles.css" />
-    <link rel="stylesheet" href="./assets/styles/hero.css" />
-    <link rel="stylesheet" href="./assets/styles/reset.css" />
-    <link rel="stylesheet" href="./assets/styles/footer.css" />
-    <title>Safra 24/25 - GWC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/styles/management.css" />
+    <link rel="stylesheet" href="../assets/styles/hero.css" />
+    <link rel="stylesheet" href="../assets/styles/styles.css" />
+    <link rel="stylesheet" href="../assets/styles/reset.css" />
+    <link rel="stylesheet" href="../assets/styles/footer.css" />
+    <title>Controle</title>
   </head>
-
   <body>
     <header>
       <nav class="navbar">
         <div class="logo">
-          <img src="./assets/images/logo-fronteira.jfif" alt="Logo Fronteira" />
+          <img
+            src="../assets/images/logo-fronteira.jfif"
+            alt="Logo Fronteira"
+          />
         </div>
         <ul class="nav-links">
           <li>
-            <a href="./index.html">Home</a>
+            <a href="../index.html">Home</a>
           </li>
           <li>
-            <a href="./routes/management.html">Management</a>
+            <a href="./management.html">Management</a>
           </li>
           <li>
             <a href="https://www.instagram.com/caiorossi.dev" target="_blank"
@@ -53,12 +56,13 @@
       <div class="container-header">
         <div class="hero-itens">
           <div class="hero-text">
-            <h1>Safra 2024/2025</h1>
+            <h1>Controle de Peso</h1>
             <p>GWC Agrícola LTDA</p>
           </div>
+
           <div class="hero-btns">
-            <a href="./routes/management.html">
-              <button class="white">Controle de Peso</button>
+            <a href="../index.html">
+              <button class="white">Safra 24/25</button>
             </a>
             <a
               href="https://github.com/Caiorossi00/Relatorio-descarga-GWC"
@@ -68,41 +72,32 @@
             </a>
           </div>
         </div>
-
         <div class="hero-pictures">
-          <img src="./assets/images/hero.avif" alt="Colheita da safra" />
+          <img
+            src="https://images.unsplash.com/photo-1571526437234-3d470eada79b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Balança pesando grãos"
+          />
         </div>
       </div>
     </header>
 
     <main>
-      <div class="search-container">
-        <input
-          type="text"
-          id="search"
-          placeholder="Pesquisar por cliente, placa, produto, etc..."
-        />
-        <i class="fas fa-search"></i>
-      </div>
-
-      <div id="info"></div>
-      <div class="container">
-        <div id="headlines"></div>
-
-        <div id="report"></div>
+      <div class="notes-container">
+        <button id="addNote">Adicionar Nota</button>
+        <div id="notesList"></div>
       </div>
     </main>
 
     <footer>
       <a href="https://www.instagram.com/caiorossi.dev" target="_blank">
         <img
-          src="./assets/images/logo.png"
+          src="../assets/images/logo.png"
           alt="Instagram"
           style="width: 120px"
         />
       </a>
     </footer>
 
-    <script type="module" src="script.js"></script>
+    <script src="management.js"></script>
   </body>
 </html>

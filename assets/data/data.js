@@ -47,6 +47,18 @@ const data = [
     romaneio: "10468",
     notas: ["Procedimento Finalizado"],
   },
+  {
+    id: 5,
+    cliente: "Ricardo Pontes Netto",
+    motorista: "Rafael Neutzling",
+    peso_liquido: "xx.xxx kg",
+    data_descarga: "15/03/2025",
+    produto: "Arroz",
+    placa: "IW16G68",
+    nf: "xxxxx",
+    romaneio: "xxxxx",
+    notas: ["Aguardando Qualificação"],
+  },
 ];
 
 export default data;

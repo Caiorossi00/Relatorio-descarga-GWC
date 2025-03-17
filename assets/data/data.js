@@ -57,7 +57,7 @@ const data = [
     placa: "IW16G68",
     nf: "17620",
     romaneio: "10469",
-    notas: ["Aguardando Qualificação"],
+    notas: ["Procedimento Finalizado"],
   },
   {
     id: 6,
@@ -69,6 +69,18 @@ const data = [
     placa: "ICS7E63",
     nf: "17621",
     romaneio: "10470",
+    notas: ["Procedimento Finalizado"],
+  },
+  {
+    id: 7,
+    cliente: "Ricardo Pontes Netto",
+    motorista: "Eder Junior",
+    peso_liquido: "xx.xxx kg",
+    data_descarga: "17/03/2025",
+    produto: "Arroz",
+    placa: "ICS7E63",
+    nf: "xxxxx",
+    romaneio: "xxxxx",
     notas: ["Aguardando Qualificação"],
   },
 ];
